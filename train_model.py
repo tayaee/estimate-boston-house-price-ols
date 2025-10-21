@@ -76,6 +76,9 @@ def ols_tuning_process(
 ) -> tuple[list[str], str, str, RegressionResultsWrapper]:
     """Performs stepwise OLS tuning based on VIF and P-value."""
 
+    #
+    # Tuning #1: Fix linearity issue in variable y.
+    #
     # Use log transformation because below 'L' check confirms there is no linearity in y.
     # sqrt transformation didn't work well.
     y_train = np.log1p(y_train)  # type: ignore
@@ -139,6 +142,9 @@ def ols_tuning_process(
         high_vif_features = vif_data[vif_data["VIF"] > VIF_THRESHOLD]
 
         if not high_vif_features.empty:
+            #
+            # Tuning #2: Fix multicollinearity in X using VIF
+            #
             vif_p_values = p_values.loc[high_vif_features["feature"]]
             if vif_p_values.empty or vif_p_values.isna().all():
                 feature_to_remove = high_vif_features.sort_values(by="VIF", ascending=False).iloc[0]["feature"]
@@ -148,6 +154,9 @@ def ols_tuning_process(
         else:
             high_p_value_features = p_values[p_values > P_VALUE_THRESHOLD].index
             if not high_p_value_features.empty:
+                #
+                # Tuning #3: Fix multicollinearity in X using p-values
+                #
                 high_p_value_idx = np.argmax(p_values[high_p_value_features])
                 feature_to_remove = high_p_value_features[high_p_value_idx]
                 reason = f"P-value > {P_VALUE_THRESHOLD:.2f}"
