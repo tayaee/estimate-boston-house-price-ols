@@ -48,7 +48,7 @@ Follow these steps to set up the environment, train the model, and run the web a
 
 2. Configure the token
     ```
-    ngrok config add-authtoken <TOKEN>
+    ngrok config add-authtoken {TOKEN}
     ```
 
 3. Make your app available to public
@@ -56,4 +56,4 @@ Follow these steps to set up the environment, train the model, and run the web a
 	ngrok http http://localhost:7860
     ```
 
-3. Use browser to access http://localhost:7860 via https://<UNIQUEID>.ngrok-free.app
+3. Use browser to access http://localhost:7860 via https://{UNIQUEID}.ngrok-free.app
