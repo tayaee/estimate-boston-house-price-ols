@@ -18,10 +18,9 @@ Follow these steps to set up the environment, train the model, and run the web a
 
 2. Install uv
 
-### 2. Clone repo
-    ```
+### 2. Clone repo    
     git clone <URL>
-    ```
+
 ### 3. One time per clone
 
 1. Create .venv, install dependencies and activate .venv
@@ -45,11 +44,15 @@ Follow these steps to set up the environment, train the model, and run the web a
     ```
 ### 5. Share the serivice with others
 
-1. Sign up ngrok and get a token
+1. Sign up ngrok and get a token. Download ngrok.exe.
 
 2. Configure the token
     ```
     ngrok config add-authtoken <TOKEN>
+    ```
+
+3. Make your app available to public
+    ```
 	ngrok http http://localhost:7860
     ```
 
