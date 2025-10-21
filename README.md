@@ -1,19 +1,10 @@
-# Sales Prediction ML Project
+# House Price Prediction ML Project
 
 This project demonstrates a complete workflow for training a Machine Learning (ML) model using scikit-learn and serving that model using two modern Python web frameworks: Streamlit and Gradio.
 
 ## Model Objective
 
-The primary goal of the model is to predict the **Sales** volume based on key independent variables related to marketing efforts and product characteristics.
-
-**Features (Independent Variables) Used for Prediction:**
-* `Advertising Expenditure`
-* `Campaign Engagement Score`
-* `Discount Percentage`
-* `Product Price`
-
-**Response Variable (Target):**
-* `MEDV` (House Price)
+The primary goal of the model is to predict **MEDV** (median house price) based on key independent variables related to marketing efforts and product characteristics.
 
 ---
 
@@ -37,7 +28,7 @@ Follow these steps to set up the environment, train the model, and run the web a
     ```
     make-venv-uv.bat
     ```
-2. (Optional) Train a model (optional, a pre-trained model is available at models/sales-1.0.0.joblib)
+2. (Optional) Train a model (optional, a pre-trained model is available at models/boston-1.0.1.joblib)
     ```
     train_model.bat
     ```
