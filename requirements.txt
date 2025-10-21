@@ -1,0 +1,12 @@
+pandas
+numpy
+scikit-learn
+statsmodels
+joblib
+pydantic
+streamlit
+gradio
+matplotlib
+seaborn
+scipy
+click
