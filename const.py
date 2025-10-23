@@ -35,5 +35,5 @@ FEATURE_INFO = {
 
 # --- Model Paths ---
 MODEL_DIR = "models"
-MODEL_FILENAME = "boston-1.0.1.joblib"
-METADATA_FILENAME = "boston-1.0.1.json"
+MODEL_FILENAME = "boston-1.0.0.joblib"
+METADATA_FILENAME = "boston-1.0.0.json"

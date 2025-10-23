@@ -156,7 +156,7 @@ def ols_tuning_process(
             reason = f"VIF > {VIF_THRESHOLD:.1f} & Max P-value"
         else:
             high_p_value_features = p_values[p_values > P_VALUE_THRESHOLD].index
-            if not high_p_value_features.empty:                
+            if not high_p_value_features.empty:
                 high_p_value_idx = np.argmax(p_values[high_p_value_features])
                 #
                 # Tuning #4: Fix multicollinearity in X by removing high p-value feature.
@@ -260,7 +260,7 @@ def train_and_save_sklearn_model(
     "output_model_path",
     required=True,
     type=click.Path(),
-    help="Path to save the output joblib model (e.g., models/boston-1.0.1.joblib).",
+    help="Path to save the output joblib model (e.g., models/boston-1.0.0.joblib).",
 )
 def main_cli(input_path, output_model_path):
     """Train OLS model on Boston Housing data."""

@@ -5,4 +5,4 @@ if .%VIRTUAL_ENV%. == .. (
         call .venv\Scripts\activate
     )
 )
-python train_model.py --input=data/boston.csv --output-model=models/boston-1.0.1.joblib
+python train_model.py --input=data/boston.csv --output-model=models/boston-1.0.0.joblib

@@ -9,7 +9,7 @@
             "console": "integratedTerminal",
             "args": [
                 "--input=data/boston.csv",
-                "--output-model=models/boston-1.0.1.joblib"
+                "--output-model=models/boston-1.0.0.joblib"
             ]
         },
         {

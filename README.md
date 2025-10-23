@@ -16,7 +16,7 @@ ___
 * Install Python 3.11+
 * Install uv
 * Run `train_model.bat`.
-* Find the output model at `models/boston-1.0.1.joblib`. This path is used by the next two web applications (`web1.py` using Streamlit, `web2.py` using Gradio).
+* Find the output model at `models/boston-1.0.0.joblib`. This path is used by the next two web applications (`web1.py` using Streamlit, `web2.py` using Gradio).
 
 ## Deployment Options
 
