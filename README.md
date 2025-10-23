@@ -8,6 +8,8 @@ ___
 
 The primary goal of the model is to predict **MEDV** (the median house price) using key independent variables related to marketing efforts and product characteristics.
 
+## Quick Demo
+* https://estimate-boston-house-price-ols.streamlit.app
 ___
 
 ## Train the model
