@@ -20,26 +20,34 @@ ___
 
 ## Deployment Options
 
-### Option 1: Using GitHub Codespaces (for repository owners/contributors)
-* **Fork** the repository.
-* Use **GitHub Codespaces** to edit and run the project directly in your browser.
-* The Streamlit application `web1.py` will be accessible at a dynamic URL, such as **https://curly-broccoli-qv445qp5w6h45jv-8501.app.github.dev** (example URL).
+### Option 1: Run web1.py in VS Code for Debugging
+* Clone repository
+* Install Python 3.11+
+* Install uv
+* Run `make-venv-uv.bat`
+* Use `Run and Debug` and run `Debug web1.py (streamlit)`
+* The Streamlit application will be accessible locally at **http://localhost:8501**.
 
-### Option 2: Using Streamlit Community Cloud (for repository owners/contributors)
-* **Sign up** for the **Streamlit Community Cloud**.
-* Create a new application with `web1.py`, referencing the GitHub repository.
-* The Streamlit application will run at a URL like **https://estimate-boston-house-price-ols.streamlit.app/** (example URL).
-
-### Option 3: Using Local Python with Streamlit
+### Option 2: Run web1.py in Command Prompt
 * Ensure **Python 3.11+** is installed.
 * Install the dependency manager **`uv`**.
 * Run `make-venv-uv.bat` to set up the virtual environment.
 * Run `streamlit run web1.py` to start the Streamlit application.
 * The Streamlit application will be accessible locally at **http://localhost:8501**.
 
-### Option 4: Using Local Python with Streamlit + ngrok for Public Access
+### Option 3: Run web1.py in GitHub Codespaces to share with others (an option for repository owner)
+* **Fork** the repository.
+* Use **GitHub Codespaces** to edit and run the project directly in your browser.
+* The Streamlit application `web1.py` will be accessible at a dynamic URL, such as **https://curly-broccoli-qv445qp5w6h45jv-8501.app.github.dev** (example URL).
+
+### Option 4: Run web1.py locally and use ngrok to share the URL for public access
 * Follow **Option 3** steps first.
 * **Sign up** on **ngrok.com** to get an authentication token and download **ngrok.exe**.
 * Set your authentication token: `ngrok config add-autotoken %NGROK_TOKEN%`
 * Run ngrok to expose your local port: `ngrok http 8501`
 * The Streamlit application `web1.py` will be available locally at **http://localhost:8501** and publicly at a temporary **ngrok** URL, such as **https://9119e5dafa3e.ngrok-free.app** (example URL).
+
+### Option 5: Run web1.py in Streamlit Community Cloud (an option for repository owner)
+* **Sign up** for the **Streamlit Community Cloud**.
+* Create a new application with `web1.py`, referencing the GitHub repository.
+* The Streamlit application will run at a URL like **https://estimate-boston-house-price-ols.streamlit.app/** (example URL).
