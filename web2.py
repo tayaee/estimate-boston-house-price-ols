@@ -69,7 +69,7 @@ else:
     inputs = [gr.Textbox(label="Model Status", value="Model loading failed. Check console.", interactive=False)]
 
 with gr.Blocks(title="Gradio OLS Boston Predictor") as demo:
-    gr.Markdown("# OLS Boston Housing Price Predictor (Gradio Demo)")
+    gr.Markdown("# Boston Housing Price Estimator using Machine Learning OLS Method (Gradio)")
     gr.Markdown("Model uses only selected features from the Boston dataset.")
 
     with gr.Row():
