@@ -37,14 +37,7 @@ ___
 * Run `streamlit run web1.py` to start the Streamlit application.
 * The Streamlit application will be accessible locally at **http://localhost:8501**.
 
-### Option 4: Using Local Python with Gradio
-* Ensure **Python 3.11+** is installed.
-* Install the dependency manager **`uv`**.
-* Run `make-venv-uv.bat` to set up the virtual environment.
-* Run `python web2.py` to start the Gradio application.
-* The Gradio application will be accessible locally at **http://localhost:8501**.
-
-### Option 5: Using Local Python with Streamlit + ngrok for Public Access
+### Option 4: Using Local Python with Streamlit + ngrok for Public Access
 * Follow **Option 3** steps first.
 * **Sign up** on **ngrok.com** to get an authentication token and download **ngrok.exe**.
 * Set your authentication token: `ngrok config add-autotoken %NGROK_TOKEN%`
