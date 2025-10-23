@@ -25,14 +25,14 @@ ___
 * Install Python 3.11+
 * Install uv
 * Run `make-venv-uv.bat`
-* Use `Run and Debug` and run `Debug web1.py (streamlit)`
+* Use `Run and Debug` and run `Debug web1.py (streamlit)` in VS Code
 * The Streamlit application will be accessible locally at **http://localhost:8501**.
 
 ### Option 2: Run web1.py in Command Prompt
 * Ensure **Python 3.11+** is installed.
 * Install the dependency manager **`uv`**.
 * Run `make-venv-uv.bat` to set up the virtual environment.
-* Run `streamlit run web1.py` to start the Streamlit application.
+* Run `streamlit run web1.py` to start the Streamlit application in Command Prompt
 * The Streamlit application will be accessible locally at **http://localhost:8501**.
 
 ### Option 3: Run web1.py in GitHub Codespaces to share with others (an option for repository owner)
