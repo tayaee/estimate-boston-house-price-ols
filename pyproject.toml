@@ -1,0 +1,13 @@
+[build-system]
+requires = ["setuptools>=61.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages]
+find = {} 
+
+[project]
+name = "estimate-boston-house-prices"
+version = "0.0.1"
+description = "A simple scikit-learn demo on Streamlit"
+readme = "README.md"
+dynamic = []
