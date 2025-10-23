@@ -23,12 +23,12 @@ ___
 ### Option 1: Using GitHub Codespaces (for repository owners/contributors)
 * **Fork** the repository.
 * Use **GitHub Codespaces** to edit and run the project directly in your browser.
-* The Streamlit application `web1.py` will be accessible at a dynamic URL, such as `https://curly-broccoli-qv445qp5w6h45jv-8501.app.github.dev` (example URL).
+* The Streamlit application `web1.py` will be accessible at a dynamic URL, such as **https://curly-broccoli-qv445qp5w6h45jv-8501.app.github.dev** (example URL).
 
 ### Option 2: Using Streamlit Community Cloud (for repository owners/contributors)
 * **Sign up** for the **Streamlit Community Cloud**.
 * Create a new application with `web1.py`, referencing the GitHub repository.
-* The Streamlit application will run at a URL like `https://estimate-boston-house-price-ols.streamlit.app/` (example URL).
+* The Streamlit application will run at a URL like **https://estimate-boston-house-price-ols.streamlit.app/** (example URL).
 
 ### Option 3: Using Local Python with Streamlit
 * Ensure **Python 3.11+** is installed.
