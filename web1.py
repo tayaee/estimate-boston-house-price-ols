@@ -29,7 +29,7 @@ def load_model_assets():
 def main():
     st.set_page_config(page_title="Streamlit OLS Boston Predictor", layout="wide")
     st.title("OLS Boston Housing Price Predictor")
-    st.markdown("Model uses only selected features from the Boston dataset. (v3)")
+    st.markdown("Model uses only selected features from the Boston dataset. (v4)")
 
     model, model_info = load_model_assets()
 
