@@ -1,62 +1,44 @@
 # House Price Prediction ML Project
 
-This project demonstrates a complete workflow for training a Machine Learning (ML) model using scikit-learn and serving that model using two modern Python web frameworks: Streamlit and Gradio.
+This project showcases a complete workflow for training a **Machine Learning (ML)** model using **scikit-learn** and deploying it with two popular Python web frameworks: **Streamlit** and **Gradio**.
+
+___
 
 ## Model Objective
 
-The primary goal of the model is to predict **MEDV** (median house price) based on key independent variables related to marketing efforts and product characteristics.
+The primary goal of the model is to predict **MEDV** (the median house price) using key independent variables related to marketing efforts and product characteristics.
 
----
+___
 
-## Quick Demo
-* https://estimate-boston-house-price-ols.streamlit.app/
+## Deployment Options
 
-## Quickstart
+### Option 1: Using GitHub Codespaces (for repository owners/contributors)
+* **Fork** the repository.
+* Use **GitHub Codespaces** to edit and run the project directly in your browser.
+* The Streamlit application will be accessible at a dynamic URL, such as `https://curly-broccoli-qv445qp5w6h45jv-8501.app.github.dev` (example URL).
 
-Follow these steps to set up the environment, train the model, and run the web applications.
+### Option 2: Using Streamlit Community Cloud (for repository owners/contributors)
+* **Sign up** for the **Streamlit Community Cloud**.
+* Create a new application, referencing the GitHub repository.
+* The Streamlit application will run at a URL like `https://estimate-boston-house-price-ols.streamlit.app/` (example URL).
 
-### 1. One time per machine
+### Option 3: Using Local Python Environment
+* Ensure **Python 3.11+** is installed.
+* Install the dependency manager **`uv`**.
+* Run `make-venv-uv.bat` to set up the virtual environment.
+* Run `streamlit run web1.py` to start the Streamlit application.
+* The Streamlit application will be accessible locally at **http://localhost:8501**.
 
-1. Install Python 3.11+
+### Option 4: Using Local Python with Gradio
+* Ensure **Python 3.11+** is installed.
+* Install the dependency manager **`uv`**.
+* Run `make-venv-uv.bat` to set up the virtual environment.
+* Run `python web2.py` to start the Gradio application.
+* The Gradio application will be accessible locally at **http://localhost:8501**.
 
-2. Install uv
-
-### 2. Clone repo    
-    git clone <URL>
-
-### 3. One time per clone
-
-1. Create .venv, install dependencies and activate .venv
-    ```
-    make-venv-uv.bat
-    ```
-2. (Optional) Train a model (optional, a pre-trained model is available at models/boston-1.0.1.joblib)
-    ```
-    train_model.bat
-    ```
-### 4. Test
-
-1. Run the demo app (streamlit version). Use browser to test with http://localhost:7860
-    ```
-    web1.bat
-    ```
-2. OR, run another demo app (gradio version). Use browser to test with http://localhost:8501
-
-    ```
-    web2.bat
-    ```
-### 5. Share the serivice with others
-
-1. Sign up ngrok and get a token. Download ngrok.exe.
-
-2. Configure the token
-    ```
-    ngrok config add-authtoken {TOKEN}
-    ```
-
-3. Make your app available to public
-    ```
-	ngrok http http://localhost:7860
-    ```
-
-3. Use browser to access http://localhost:7860 via https://{UNIQUEID}.ngrok-free.app
+### Option 5: Using Local Python + ngrok for Public Access
+* Follow **Option 3** steps first.
+* **Sign up** on **ngrok.com** to get an authentication token and download **ngrok.exe**.
+* Set your authentication token: `ngrok config add-autotoken %NGROK_TOKEN%`
+* Run ngrok to expose your local port: `ngrok http 8501`
+* The Streamlit application will be available locally at **http://localhost:8501** and publicly at a temporary **ngrok** URL, such as `https://9119e5dafa3e.ngrok-free.app` (example URL).
