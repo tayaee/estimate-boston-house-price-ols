@@ -8,6 +8,9 @@ The primary goal of the model is to predict **MEDV** (median house price) based 
 
 ---
 
+## Quick Demo
+* https://estimate-boston-house-price-ols.streamlit.app/
+
 ## Quickstart
 
 Follow these steps to set up the environment, train the model, and run the web applications.
