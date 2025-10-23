@@ -42,4 +42,4 @@ ___
 * **Sign up** on **ngrok.com** to get an authentication token and download **ngrok.exe**.
 * Set your authentication token: `ngrok config add-autotoken %NGROK_TOKEN%`
 * Run ngrok to expose your local port: `ngrok http 8501`
-* The Streamlit application `web1.py` will be available locally at **http://localhost:8501** and publicly at a temporary **ngrok** URL, such as `https://9119e5dafa3e.ngrok-free.app` (example URL).
+* The Streamlit application `web1.py` will be available locally at **http://localhost:8501** and publicly at a temporary **ngrok** URL, such as **https://9119e5dafa3e.ngrok-free.app** (example URL).
