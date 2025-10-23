@@ -1,5 +1,0 @@
-[runner]
-magicEnabled = True
-
-[cli]
-install_command = "pip install -r requirements.txt"
