@@ -28,7 +28,7 @@ def load_model_assets():
 
 def main():
     st.set_page_config(page_title="Streamlit OLS Boston Predictor", layout="wide")
-    st.title("Boston Housing Price Estimator using Machine Learning OLS Method (Streamlit)")
+    st.title("Boston Housing Price Estimator v2 using Machine Learning OLS Method (Streamlit)")
     st.markdown("Model uses only selected features from the Boston dataset. https://github.com/tayaee/estimate-boston-house-price-ols")
 
     model, model_info = load_model_assets()
